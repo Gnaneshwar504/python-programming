@@ -1,0 +1,15 @@
+def get_weather_report(temperature):
+    if temperature < 22:
+        msg = "Cold"
+    elif (temperature >=20) and (temperature<35):
+        msg = "Warm"
+    else:
+        msg = "Hot"
+    return msg
+    # Complete this function
+
+
+temperature = int(input())
+result = get_weather_report(temperature)
+print(result)
+# Call the get_weather_report function
