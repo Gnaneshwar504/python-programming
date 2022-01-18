@@ -1,0 +1,21 @@
+a = input()
+b = input()
+if a ==b:
+    print("Tie")
+else:
+    if b=="Rock":
+        if a =="Paper":
+            print("Abhinav Wins")
+        if a =="Scissors":
+            print("Anjali Wins")
+    if b=="Paper":
+        if a =="Rock":
+            print("Anjali Wins")
+        if a =="Scissors":
+            print("Abhinav Wins")
+    if b=="Scissors":
+        if a =="Paper":
+            print("Anjali Wins")
+        if a =="Rock":
+            print("Abhinav Wins")
+       
