@@ -1,0 +1,33 @@
+def covl(x):
+    return list(map(int,x))
+    
+a = input().split()
+a = covl(a)
+x = []
+z= ""
+f = []
+for i in range(a[0]):
+    v= input().split()
+    x.append(v)
+    
+n = a[0]+a[1]-1
+
+for i in range(n):
+    f.append(z)
+def ax(f,i,x):
+    j = i+len(x)
+    a = f[i:j]
+    b = f[0:i]
+    c= f[j:]
+    q = []
+    for k in range(len(x)):
+        aa= a[k]+" "+x[k]
+        q.append(aa)
+    return b+q+c
+for i in range(a[0]):
+    ff= ax(f,i,x[i])
+    f = ff 
+    
+for i in ff:
+    i = i.replace("x ", "")
+    print(i)
