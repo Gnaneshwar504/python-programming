@@ -1,0 +1,17 @@
+students_dict = {
+    "Ram": "Cricket",
+    "Naresh": "Football",
+    "Vani": "Tennis",
+    "Rahim": "Cricket"
+}
+
+# Write your code here
+
+a = int(input())
+for i in range(a):
+    n = input().split()
+    key, value = n[0],n[1]
+    
+    students_dict[key]=value
+print(students_dict)
+   
