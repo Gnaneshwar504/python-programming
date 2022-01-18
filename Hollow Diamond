@@ -1,0 +1,32 @@
+n = int(input())
+left_space_count = n-1
+left_space = " "*left_space_count
+out_put = left_space+"A"
+print(out_put)
+hollow_space_count=-1
+
+for i in range(2,n+1):
+    a = "0abcdefghijklmnopqrstuvwxyz"
+    left_space_count = n-i
+    left_space = " "*left_space_count
+    hollow_space_count = hollow_space_count+2
+    hollow_space = " "*hollow_space_count
+    out = left_space+str(a[i]).upper()+hollow_space+str(a[i]).upper()
+    
+    print(out)
+    
+for j in range(1,n-1):
+    a = "0abcdefghijklmnopqrstuvwxyz"
+    left_space_count = j
+    left_space = " "*left_space_count
+    hollow_space_count = hollow_space_count-2
+    hollow_space = " "*hollow_space_count
+    out_line = left_space+str(a[n-j]).upper()+hollow_space+str(a[n-j]).upper()
+    print(out_line)
+    
+left_space_count = n-1
+left_space = " "*left_space_count
+out_put = left_space+"A"
+print(out_put)
+   
+    
