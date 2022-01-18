@@ -1,0 +1,12 @@
+a = input().split()
+ss = set(a)
+s = list(ss)
+srt = s[:]
+sort = sorted(srt)
+vv = []
+for i in ss:
+    v = a.count(i)
+    vv.append(v)
+for i in sort:
+    v = s.index(i)
+    print(f'{i}: {vv[v]}')
