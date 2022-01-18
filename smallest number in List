@@ -1,0 +1,11 @@
+number = input()
+
+nums_list = number.split(",")
+
+lenght_of_nums_list = len(nums_list)
+for i in range(lenght_of_nums_list):
+    nums_list[i] = int(nums_list[i])
+    
+nums_list = sorted(nums_list)
+smallest_number=nums_list[0]
+print(smallest_number)
