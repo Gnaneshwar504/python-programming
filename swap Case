@@ -1,0 +1,9 @@
+a = input()
+c= ""
+for i in a:
+    b=i.lower()or i.upper()
+    if b==i:
+        c= c+i.upper()
+    else:
+        c= c+i.lower()
+print(c)
