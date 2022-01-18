@@ -1,0 +1,17 @@
+def strint_int(x):
+    a = []
+    for i in x:
+        d = int(i)
+        a.append(d)
+    return a
+
+m = input().split()
+c= strint_int(m)
+num_set = set(c)
+if len(num_set)==1:
+    print("True")
+else:
+    c = list(num_set)
+    c.sort()
+    print(c)
+    
