@@ -1,0 +1,22 @@
+from datetime import datetime, timedelta
+a = input()
+b = input()
+d1 = datetime.strptime(a, "%d %b %Y")
+d2 = datetime.strptime(b, "%d %b %Y")
+v=True
+x = 0
+sunday =0
+Saturday = 0
+while v:
+    delta =timedelta(days = x)
+    d1 = d1 +delta
+    d = datetime.strftime(d1, "%A")
+    if d== "sunday":
+        sunday+=1
+    if d== "Saturday":
+        sunday+=1
+    if d1 == d2:
+        break
+    x = 1
+print(f'Saturday: {Saturday}')  
+print(f'Sunday: {Sunday}') 
