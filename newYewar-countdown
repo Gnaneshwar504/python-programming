@@ -1,0 +1,10 @@
+from datetime import datetime, timedelta
+a =input()
+f = datetime(2021,1,1,0,0,0)
+ff = datetime.strptime(a,"%b %d %Y %I:%M %p")
+x = f-ff
+v =(x.total_seconds())
+hours = v//(60*60)
+hr_rem = v%(60*60)
+mins = hr_rem//60
+print(f'{int(hours)} hours {int(mins)} minutes')
