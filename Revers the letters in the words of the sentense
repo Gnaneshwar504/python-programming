@@ -1,0 +1,9 @@
+a = input()
+a= a.split()
+b = []
+for i in a:
+    b+= [i[::-1]]
+  
+  
+c = " ".join(b)
+print(c)
