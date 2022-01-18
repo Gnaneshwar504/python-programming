@@ -1,0 +1,25 @@
+n  = int(input())
+a = n//1000
+
+thu = n % 1000 
+b=thu//500
+
+f_hun = thu %500
+c = f_hun//100
+
+hun = f_hun%100
+d = hun//50
+
+fif = hun%50
+e = fif//20
+
+twen = fif%20
+f = twen//5
+
+five  = twen%5
+g = five//1
+
+value = (a,b,c,d,e,f,g)
+key = (1000,500,100,50,20,5,1)
+for i in range(len(value)):
+    print(f'{key[i]}:{value[i]}')
