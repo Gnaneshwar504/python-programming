@@ -1,0 +1,11 @@
+a = input()
+b = 0
+for i in a:
+    if i == " ":
+        break
+    b = b +1
+        
+up = a[:b].upper()
+sen = up + a[b:]
+print(sen)
+    
