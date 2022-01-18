@@ -1,0 +1,10 @@
+a = input()
+d =[]
+for i in a:
+    if i.isdigit():
+        d.append(int(i))
+print(sum(d))
+lenght = len(d)
+x = round((sum(d)/lenght),1)
+print(x)
+        
