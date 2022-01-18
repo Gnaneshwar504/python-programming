@@ -1,0 +1,9 @@
+a = int(input())
+alphabets = "abcdefghijklmnopqrstuvwxyz"
+inpu = alphabets[:a]
+b = ""
+for i in inpu:
+    b = b+str(i)+" "
+    b = b.upper()
+    print(b)
+    
