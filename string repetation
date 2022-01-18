@@ -1,0 +1,9 @@
+string_word = input()
+m = int(input())
+
+a = string_word
+b = " "
+c  = m
+result = ((a+b)*c)
+print(result)
+
