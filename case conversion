@@ -1,0 +1,10 @@
+a = input()
+b= a[0].lower()
+for i in (a[1:]):
+    if i.islower():
+        b = b+i
+        
+    else:
+        i = i.lower()
+        b = b+"_"+i
+print(b)
