@@ -1,0 +1,10 @@
+a=input().split()
+x=[]
+for i in a:
+    if i not in x:
+        x.append(i)
+for i in range(0,len(x)):
+    #print(f'{x[i]}: {a.count(x[i])}')
+    #print(x[i],":",a.count(x[i]))
+    #print(f'{i}: {vv[k]}')
+    print("{}: {}".format(x[i],a.count(x[i])))
