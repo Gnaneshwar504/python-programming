@@ -1,0 +1,20 @@
+a = input()
+b = input()
+n = 0
+if len(a) != len(b):
+    print("No Match")
+elif a ==b:
+    print(n)
+else:
+    for i in range(len(a)):
+        x = b[1:]
+        y = b[0:1]
+        b = x+y
+        n = n+1
+        if a == b:
+            print(n)
+            break
+        else:
+            if i == (len(a)-1):
+                if a!= b:
+                    print("No Match")
