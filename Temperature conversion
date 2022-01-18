@@ -1,0 +1,18 @@
+a = input()
+v = a[-1]
+t = float(a[:-1])
+if v.upper() == "C":
+    f = (t * 9)/5+32
+    k = t +273
+    x=t
+elif v.upper()=="F":
+    x = (t-32)*5/9
+    k = x+273
+    f=t
+elif v.upper()=="K":
+    x=t-273
+    f= (x *9)/5+32
+    k= t
+print(f'{round(x,2)}C')
+print(f'{round(f,2)}F')
+print(f"{round(k,2)}K")
