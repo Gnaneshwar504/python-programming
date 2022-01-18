@@ -1,0 +1,12 @@
+a = int(input())
+year = 365
+week = 7
+
+years_result = a//year
+weeks_result = (a%year)//week
+days_result = a - ((years_result*year) + (weeks_result*week))
+
+print("{}" " years " "{}" " weeks " "{}" " days ".format(years_result,weeks_result,days_result) )
+
+
+
