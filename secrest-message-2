@@ -1,0 +1,17 @@
+a = "abcdefghijklmnopqrstuvwxyz"
+n = range(1,27)
+b= input()
+b= b.lower() 
+c = ""
+for i in b:
+    if i ==" ":
+        c = c+i
+    else:
+        v = a.index(i)
+        f = n[v]
+        c = c +str(f)+"-"
+c= c.split(" ")
+for i in c:
+    print(i[0:-1], end=" ")
+
+        
