@@ -1,0 +1,12 @@
+m = input()
+m = m.split(",")
+n = int(input())
+
+lenght = len(m)
+for i in range(lenght):
+    m[i] = int(m[i])
+    
+
+m = sorted(m)
+larg = m[-n]
+print(larg)
