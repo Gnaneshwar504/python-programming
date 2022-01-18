@@ -1,0 +1,13 @@
+students_dict = {
+    "Ram": "Cricket",
+    "Naresh": "Football",
+    "Vani": "Tennis",
+    "Rahim": "Cricket"
+}
+
+# Write your code here
+a,value = input().split()
+students_dict[a]= value
+print(students_dict)
+
+
