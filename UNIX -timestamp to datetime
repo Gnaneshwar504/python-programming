@@ -1,0 +1,7 @@
+import datetime
+
+zero = datetime.datetime(1970, 1, 1)
+seconds = datetime.timedelta(seconds=int(input()))
+dt_format = '%Y-%m-%d %H:%M:%S'
+result_time = zero + seconds
+print(result_time.strftime(dt_format))
