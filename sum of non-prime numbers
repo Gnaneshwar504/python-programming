@@ -1,0 +1,14 @@
+a = int(input())
+count_s = []
+z = 0
+for i in range(a):
+    b = int(input())
+    for j in range(4,9):
+        if (b%j)==0:
+            count_s.append(b)
+            x = set(count_s)
+            y = list(x)
+            z =sum(y)
+print(z)
+        
+    
