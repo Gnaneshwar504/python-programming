@@ -1,0 +1,14 @@
+a = int(input())
+b= int(input())
+def s(x):
+    y = int(x**(1/2))
+    return y*y == x
+    
+v = True
+for i in range(a, (b+1)):
+    if s(i):
+        print(i)
+        v = False
+        break
+if v:
+    print("No Perfect Square")
