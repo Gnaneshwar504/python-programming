@@ -1,0 +1,12 @@
+n=input().split()
+
+c= []
+for i in n:
+    b = int(i)
+    c.append(b)
+    
+d = set(c)
+n = list(d)
+n.sort()
+print(n)
+    
