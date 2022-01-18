@@ -1,0 +1,15 @@
+def sum_of_cubes_m_to_n(m, n):
+    total =0
+    for i in range(m, n+1):
+        total = total +(i**3)
+    return total
+        
+    
+    # Complete this function
+
+
+m = int(input())
+n = int(input())
+result = sum_of_cubes_m_to_n(m,n)
+print(result)
+# Call the sum_of_cubes_m_to_n function
