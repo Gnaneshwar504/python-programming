@@ -1,0 +1,14 @@
+a= input().split()
+aa =[]
+
+for i in a:
+    n = int(i)
+    aa.append(n)
+x = set(aa)
+bb=max(aa)
+bb_2=min(aa)
+z =set(range(bb_2,bb+1))
+s = z-x
+c= list(s)
+c = min(c)
+print(c)
