@@ -1,0 +1,23 @@
+a = input()
+x = a
+abc  = "abcdefghijklmnopqrstuvwxyz"
+for i in a:
+    if i.isalpha():
+        j=i.lower()
+        if j in abc:
+            x = x.replace(i," ")
+    elif i.isdigit():
+        pass
+    else:
+        if i==" ":
+            pass
+        else:
+             x = x.replace(i," ")
+x = x.split()
+n = list(map(int,x))
+print(sum(n))
+lenght = len(n)
+y = round((sum(n)/lenght),2)
+print(y)
+ 
+    
