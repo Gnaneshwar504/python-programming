@@ -1,0 +1,10 @@
+a = input()
+b = ""
+c = ""
+for i in a:
+    if i.isdigit():
+        b = b+i
+    else:
+        c=c+i
+print(c+str(b))       
+
